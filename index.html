@@ -5,7 +5,7 @@ layout: home
 <div class="index-content blog">
     <div class="section">
         <ul class="artical-cate">
-            <li class="on"><a href="/"><span>Blog</span></a></li>
+            <li class="on"><a href="/"><span>Blogs</span></a></li>
             <li style="text-align:center"><a target="_blank" href="/atom.xml"><span>Feed</span></a></li>
             <li style="text-align:right"><a target="_blank" href="/wiki"><span>Wiki</span></a></li>
         </ul>
@@ -13,7 +13,7 @@ layout: home
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
-        {% for post in pagenator.posts %}
+        {% for post in paginator.posts %}
             <li>
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <div class="title-desc">{{ post.description }}</div>
