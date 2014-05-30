@@ -1,0 +1,13 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
+title: Vien Dave's Blog
+url: http://daiweiyang.com
+feed: /atom.xml
+author_info: <a href="http://daiweiyang.com">Vien Dave</a>
+name: Vien_Dave
+email: jacob.seu.cose@gmail.com
