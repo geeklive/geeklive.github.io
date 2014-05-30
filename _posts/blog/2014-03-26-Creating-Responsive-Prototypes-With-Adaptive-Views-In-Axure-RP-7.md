@@ -32,24 +32,24 @@ Axure RP 7的适应性视图让不借助编码创建响应式原型成为了可�
 我们也在x轴10像素和310像素的地方添加辅助线来标记边距，这样页面内容就不会紧贴在屏幕的左右两边。对于iOS的Retina显示屏，在这篇文章中所使用的屏幕宽度会自动缩放到更高的分辨率。较小的尺寸只是让我们Axure RP的文件体积更小而且在制作原型时更方便调整。
 
 ##### 创建一个单一的页面，用页面辅助线标示出屏幕边缘和页面左右两边的边距。
-![Axure](http://daiweiyang.com/images/Axure/1.png)
+![Axure](http://daiweiyang.com/global/images/Axure/1.png)
 
 现在我们准备好设计基础视图的页面了。我们要做的第一件事就是创建一个简单的头部，在彩色条上输入自行车商店的名称。头部创建后，右键单击，然后从菜单中选择“转换为母版”。一旦你命名并保存该头部，就会添加到工作区左栏底部的母版面板中。在Axure RP中，母版可以在一处进行设计，然后复用到原型中的其他页面里。
 
 ##### 使用“转换为母版”对话框时，你可以对母版进行命名，并设置母版在页面上拖放时的行为。
-![Axure](http://daiweiyang.com/images/Axure/2.png)
+![Axure](http://daiweiyang.com/global/images/Axure/2.png)
 
 添加更多的界面元素到页面后，你已经设计好手机竖屏的基本页面。现在我们将利用这个功能创建不同的视图。
 
 ##### 完成基本视图
-![Axure](http://daiweiyang.com/images/Axure/3.png)
+![Axure](http://daiweiyang.com/global/images/Axure/3.png)
 
 ## 创建一个新视图
 
 通过点击Axure RP 页面标签左侧的按钮，打开“自适应视图”对话框来创建新视图（下面截图中用红色边框标示）。
 
 ##### 点击按钮打开自适应视图对话框。
-![Axure](http://daiweiyang.com/images/Axure/4.png)
+![Axure](http://daiweiyang.com/global/images/Axure/4.png)
 
 使用自适应视图非常简单：
 
@@ -59,7 +59,7 @@ Axure RP 7的适应性视图让不借助编码创建响应式原型成为了可�
 * 最后，填入屏幕宽度的数值后就可以生成视图了。
 
 #####　给第一个子视图进行设置。
-![Axure](http://daiweiyang.com/images/Axure/5.png)
+![Axure](http://daiweiyang.com/global/images/Axure/5.png)
 
 完成后，命名为“Phone Landscape（手机横屏）”的视图会在屏幕大于或等于321像素时触发显示。因为我们是以iPhone 5作为我们移动端设计的载体，所以这个视图会在人们倾斜手机至横向时出现。否则，显示的则是基础视图（即使iPhone Retina屏幕的实际宽度是640像素，基础视图还是以纵向显示）。我们新添的视图也会在平板和桌面上显示，除非我们增加了特定的视图。
 
@@ -68,7 +68,7 @@ Axure RP 7的适应性视图让不借助编码创建响应式原型成为了可�
 下面的屏幕截图显示了我们的两个视图，基本和321。Axure RP根据你在创建时所指定的宽度自动设置视图的名称。321标签是蓝色的，表示当前编辑状态。在右侧的紫色辅助线在x轴321像素处，表示截点。
 
 ##### 新视图的内容和布局和基本视图的一样，但随着设计的进行会有所改变。
-![Axure](http://daiweiyang.com/images/Axure/6.png)
+![Axure](http://daiweiyang.com/global/images/Axure/6.png)
 
 ## 继承
 
@@ -88,12 +88,12 @@ Axure RP 7的适应性视图让不借助编码创建响应式原型成为了可�
 在下面的截图中可以看到，我们增加了一条辅助线，并把头部的长度扩展到568像素。
 
 ##### 不同视图中的母版都继承了基本页面中的宽度。
-![Axure](http://daiweiyang.com/images/Axure/7.png)
+![Axure](http://daiweiyang.com/global/images/Axure/7.png)
 
 现在我们可以更新手机横屏视图的设计了。在下面的截图中，我们把在竖屏视图中位于页面底部的一组标准清单列表移到了页面主图的右侧。促销标题字号更大了，在它下面的文本也扩展到与屏幕同宽，更多的页面内容会出现在屏幕上（这取决于该页面是否是全屏浏览，还是使用chrome浏览器，或者iPhone的状态栏是否有显示）。
 
 ##### 该页面已经被重新设计过，以更好地利用手机横向屏幕。
-![Axure](http://daiweiyang.com/images/Axure/8.png)
+![Axure](http://daiweiyang.com/global/images/Axure/8.png)
 
 ## 平板视图
 
@@ -102,27 +102,27 @@ Axure RP 7的适应性视图让不借助编码创建响应式原型成为了可�
 我们会从平板的竖屏开始设计，因为是下一级宽度的屏幕。我们设置了当屏幕超过569像素时出现这个视图，这使得手机横屏的视图宽度限制在321像素和568像素之间。正如你在下面截图中可以看到的，我们可以选择让平板视图延续手机横屏视图。根据继承的机制，在基本视图或者在手机横屏视图中的任何改动都会同步到平板视图中。
 
 ##### 创建一个平板竖屏视图的设置对话框。
-![Axure](http://daiweiyang.com/images/Axure/9.png)
+![Axure](http://daiweiyang.com/global/images/Axure/9.png)
 
 而且，正如手机横屏视图一样，平板竖屏视图也是完全复制了上级视图的内容。在下面的截图中，我在x轴768像素和y轴1024像素的地方添加了页面辅助线，这是非Retina屏的iPad竖屏尺寸。页面标签上标有“569”，表明这个视图的尺寸截点。
 
 ##### 平板竖屏视图初始的内容与上级视图的完全一样。
-![Axure](http://daiweiyang.com/images/Axure/10.png)
+![Axure](http://daiweiyang.com/global/images/Axure/10.png)
 
 在一个更大的区域里设计，我们可以完全改变图层和添加新的内容元素。
 
 ##### 平板竖屏视图可以放入更多的内容。
-![Axure](http://daiweiyang.com/images/Axure/11.png)
+![Axure](http://daiweiyang.com/global/images/Axure/11.png)
 
 我们最后创建的是平板横屏视图，由于这个视图会在屏幕超过769像素时出现，所以在台式机或者笔记本上也会显示该视图，除非添加其他视图。我们会将这个视图继承平板竖屏的视图，包括为这个设备添加的内容。
 
 ##### 这个视图会应用在平板横屏和台式机上，除非有新的的视图添加进来。
-![Axure](http://daiweiyang.com/images/Axure/12.png)
+![Axure](http://daiweiyang.com/global/images/Axure/12.png)
 
 在最后的视图里，我们在屏幕右侧有更多的空间去进行设计。
 
 ##### 在平板横屏视图里，我们可以在竖屏的基础上简单地添加元素或者完全重新思考设计，这个取决于项目的需求和现有的内容。
-![Axure](http://daiweiyang.com/images/Axure/13.png)
+![Axure](http://daiweiyang.com/global/images/Axure/13.png)
 
 这个也完成后，该项目在手机和平板的横竖屏状态下都有不同的视图。如果你有一个iPhone或者iPad，你可以打开浏览器，导航到我们的范例原型（由AxShare创办），并旋转你的设备，来查看为每个设备设计的不同视图。
 
