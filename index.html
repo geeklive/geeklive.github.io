@@ -21,52 +21,39 @@ layout: home
         {% endfor %}
         </ul>
         
-        <div id="post-pagination" class="pagination">
+        <!--分页器-->
+        <div id="pagination">
+          <div class="pagenavi">
+          <span class="page_number">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
+          <!--暂时先把第一页给注释掉-->
+          <!--a href="/">第一页</a-->
           {% if paginator.previous_page %}
-            <p class="previous">
-              {% if paginator.previous_page == 1 %}
-                <a href="/">Previous</a>
-              {% else %}
-                <a href="{{ paginator.previous_page_path }}">Previous</a>
-              {% endif %}
-            </p>
-          {% else %}
-            <p class="previous disabled">
-              <span>Previous</span>
-            </p>
+            {% if paginator.previous_page == 1 %}
+              <a href="/" class="current">前一页</a>
+            {% else %}
+              <a href="/page{{paginator.previous_page}}">前一页</a>
+            {% endif %}
+            {% else %}
+              <span>前一页</span>
           {% endif %}
         
-          <ul class="pages">
-            <li class="page">
-              {% if paginator.page == 1 %}
-                <span class="current-page">1</span>
-              {% else %}
-                <a href="/">1</a>
-              {% endif %}
-            </li>
-        
-            {% for count in (2..paginator.total_pages) %}
-              <li class="page">
-                {% if count == paginator.page %}
-                  <span class="current-page">{{ count }}</span>
-                {% else %}
-                  <a href="/page{{ count }}">{{ count }}</a>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
+          {% for count in (1..paginator.total_pages) limit:8 %}
+            {% if count == paginator.page %}
+              <span class="current-page">{{count}}</span>
+            {% else %}
+              <a href="/page{{count}}">{{count}}</a>
+            {% endif %}
+          {% endfor %}
         
           {% if paginator.next_page %}
-            <p class="next">
-              <a href="{{ paginator.next_page_path }}">Next</a>
-            </p>
+            <a href="/page{{paginator.next_page}}">后一页</a>
           {% else %}
-            <p class="next disabled">
-              <span>Next</span>
-            </p>
+            <span>后一页</span>
           {% endif %}
-        </div>
-    
+            <!--暂时先把最后一页给注释掉-->
+            <!--a href="/page{{paginator.total_pages}}">最后一页</a-->
+          </div>
+            
     </div>
     <div class="aside">
     </div>
