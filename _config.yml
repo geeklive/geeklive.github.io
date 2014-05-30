@@ -4,7 +4,7 @@ markdown: rdiscount
 pygments: true
 paginate: 8
 permalink: /:title
-gems: - jekyll-sitemap
+gems: jekyll-sitemap
 
 title: Vien Dave's Blog
 url: http://daiweiyang.com
