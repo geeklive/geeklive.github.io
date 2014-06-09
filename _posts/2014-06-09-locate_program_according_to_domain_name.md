@@ -13,7 +13,7 @@ category: blog
 ### 一、查询dns最终解析结果
 <ul>
 	<li>1、上任意一台linux服务器</li>
-	<li>2、从根服务器开始追踪一个域名的解析过程： `dig xxx.com +trace|less`</li>
+	<li>2、从根服务器开始追踪一个域名的解析过程： <code>dig xxx.com +trace|less`</code></li>
 
    	ps:查询出来每列的数据：域名——缓存时间——dns类型——IP或者根域名
     	<li>3、查看最后的A记录，即dns的最终解析到的服务器地址（可能会有多个，需要多次执行后续操作才可得到完整的路由情况）</li>
@@ -29,12 +29,11 @@ category: blog
 	       ci123dev下，分别查看squid、nginx、apache，看lister监听的是否80端口
 
 	<li>3、查看相应配置文件，找到对应域名的路由情况</li>
-		```
+		
 		/opt/ci123/squid/etc/squid.conf
 		/opt/ci123/nginx/conf/vhost/*.com
 		/opt/ci123/apache/conf/httpd.conf
 		
-		```
 	<li>4、配置文件如何查看</li>
 		squid 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口
 		nginx 配置文件，查看其相应的location，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用）
