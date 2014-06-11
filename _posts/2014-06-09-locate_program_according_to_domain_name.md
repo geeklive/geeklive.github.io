@@ -27,14 +27,14 @@ category: blog
 	<li>1、访问的时候默认访问的是80端口</li>
 	<li>2、查找80端口对应的服务软件（squid、nginx、apache）</li>
 	       root下可以使用netstat -tupln|grep :80或者lsof -i:80查看是是哪个服务监听的80端口
-	       ci123dev下，分别查看squid、nginx、apache，看lister监听的是否80端口
+	       dev下，分别查看squid、nginx、apache，看lister监听的是否80端口
 
 	<li>3、查看相应配置文件，找到对应域名的路由情况</li>
-	
+		<code>
 		/opt/ci123/squid/etc/squid.conf
 		/opt/ci123/nginx/conf/vhost/*.com
 		/opt/ci123/apache/conf/httpd.conf
-		
+		</code>
 	<li>4、配置文件如何查看</li>
 		squid 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口
 		nginx 配置文件，查看其相应的location，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用）
