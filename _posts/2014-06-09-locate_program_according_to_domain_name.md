@@ -25,15 +25,14 @@ category: blog
 root下可以使用`netstat -tupln|grep :80` 或者`lsof -i:80` 查看是是哪个服务监听的80端口.<br/>
 dev下，分别查看`squid、nginx、apache` ，看`lister` 监听的是否80端口.<br/>
 * 3、查看相应配置文件，找到对应域名的路由情况
-	
 ```
 /opt/ci123/squid/etc/squid.conf
 /opt/ci123/nginx/conf/vhost/*.com
 /opt/ci123/apache/conf/httpd.conf
 ```		
-* 4、配置文件如何查看
-`squid` 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口;<br/>
-`nginx` 配置文件，查看其相应的`location`，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用;<br/>
+* 4、配置文件如何查看:<br/>
+`squid` 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口；<br/>
+`nginx` 配置文件，查看其相应的`location`，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用；<br/>
 `apache` 配置文件，找相应的`DocumentRoot` 以及`Rewrite`.
 
 ## 三、php程序的rewrite
