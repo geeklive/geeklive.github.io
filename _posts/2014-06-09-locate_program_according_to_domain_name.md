@@ -15,7 +15,7 @@ category: blog
 * 1、上任意一台linux服务器
 * 2、从根服务器开始追踪一个域名的解析过程： <code>dig xxx.com +trace|less</code></li>
 
-ps:查询出来每列的数据：域名——缓存时间——dns类型——IP或者根域名
+  ps:查询出来每列的数据：域名——缓存时间——dns类型——IP或者根域名
 
 * 3、查看最后的A记录，即dns的最终解析到的服务器地址（可能会有多个，需要多次执行后续操作才可得到完整的路由情况）
 
@@ -26,8 +26,8 @@ ps:也可以用`nslookup`方法，比较简易，好处是在windows下也可用
 * 1、访问的时候默认访问的是80端口
 * 2、查找80端口对应的服务软件（squid、nginx、apache）
 
-	root下可以使用`netstat -tupln|grep :80` 或者`lsof -i:80` 查看是是哪个服务监听的80端口
-	dev下，分别查看`squid、nginx、apache` ，看`lister` 监听的是否80端口
+root下可以使用`netstat -tupln|grep :80` 或者`lsof -i:80` 查看是是哪个服务监听的80端口
+dev下，分别查看`squid、nginx、apache` ，看`lister` 监听的是否80端口
 
 * 3、查看相应配置文件，找到对应域名的路由情况
 	
@@ -39,9 +39,9 @@ ps:也可以用`nslookup`方法，比较简易，好处是在windows下也可用
 
 * 4、配置文件如何查看
 
-	`squid` 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口
-	`nginx` 配置文件，查看其相应的`location`，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用）
-	`apache` 配置文件，找相应的`DocumentRoot` 以及`Rewrite`
+`squid` 配置文件，直接搜索到对应域名，看上一行，看其对应的ip以及端口
+`nginx` 配置文件，查看其相应的`location`，看代理到个服务器的什么端口（注意看静态文件的缓存目录，修改前端的用）
+`apache` 配置文件，找相应的`DocumentRoot` 以及`Rewrite`
 
 ## 三、php程序的rewrite
 
