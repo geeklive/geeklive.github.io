@@ -59,8 +59,6 @@ category: blog
 
 * window.open(url,name,features)：创建新的浏览器窗口；
 * 平稳退化；
-* 性能考虑：
-
-a. 尽量少访问DOM和尽量减少标记；<br />
-b. 合并和放置脚本(把所有 `<script>` 标签放于文档末尾); <br />
-c. 压缩脚本(xx.min.js)；
+* 尽量少访问DOM和尽量减少标记；
+* 合并和放置脚本(把所有 `<script>` 标签放于文档末尾); 
+* 压缩脚本(xx.min.js)；
