@@ -41,5 +41,4 @@ category: blog
           }
      }
 ```
-
 * `getAttribute()` ，`setAttribute()` ；
