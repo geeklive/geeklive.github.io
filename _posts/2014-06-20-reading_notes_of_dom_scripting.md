@@ -1,13 +1,9 @@
 ---
 layout: post
 title: 《JavaScript DOM 编程艺术》读书笔记
-description: 
+description: 随着Node.js的崛起，各大互联网公司对前端工程师的渴求可谓疯狂。按照这个节奏，前端工程师很有可能发展为产品技术工程师，向上对接BD、运营、视觉等，向下对接JAVA、DBA、PE等。作为一个见习PM，个人感觉了解前端诸多技能对交互感知会有不少提升，所以开始前端技能的加点，第一站——《Javascript Dom 编程艺术》。
 category: blog
 ---
-
-## 前言
-
-◇DOM脚本编程技术背后的思路和原则：预留退路、循序渐进、以用户为中心的设计。
 
 ## 第1章 JavaScript简史
 
