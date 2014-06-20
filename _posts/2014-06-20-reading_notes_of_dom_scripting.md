@@ -66,7 +66,7 @@ category: blog
 ## 第6章 案例研究：JavaScript美术馆改进版
 
 * JavaScript与HTML标记分离；
-* 页面加载时候执行多个函数：`addLoadEvent()` ;
+* 把多个JS函数绑定到onload事件处理函数上：`addLoadEvent()` ;
 
 ```
      function addLoadEvent(func){
