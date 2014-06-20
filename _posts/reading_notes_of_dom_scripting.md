@@ -1,0 +1,49 @@
+---
+layout: post
+title: 《JavaScript DOM 编程艺术》读书笔记
+description: 
+category: blog
+---
+
+## 前言
+
+◇DOM脚本编程技术背后的思路和原则：预留退路、循序渐进、以用户为中心的设计。
+
+## 第1章 JavaScript简史
+
+* BOM浏览器对象模型，允许访问和操控浏览器窗口。
+* DOM文件对象模型，是一套对文档的内容进行抽象和概念化的方法。
+* DHTML动态HTML，结合HTML、CSS、JavaScript三种技术。
+* W3C推出的标准化DOM可以让任何一种程序设计语言对使用任何一种标记语言编写出来的任何一份文档进行操纵。
+* DOM是一种API（应用编程接口）。API：一组已经得到有关各方共同认可的基本约定（相当于现实世界的莫尔斯码、元素周期表）。
+* W3C对DOM的定义是：一个与系统平台和编程语言无关的接口，程序和脚本可以通过这个接口动态地对文档的内容、结构和样式进行访问和修改。
+
+## 第2章 JavaScript语法
+
+* 相等操作符==认为空字符串与false含义相同；全等操作符===会严格比较(值与类型)；
+* 在函数中对与全局变量相同名字的变量使用var关键字控制其为局部变量，因此函数内部变量应都使用var定义；
+* JavaScript 中的对象分为三种类型：用户定义的对象（user-defined object）；内建对象（native object）内建在JavaScript语言里的对象，如Array、Math和Date等；宿主对象（host object）由浏览器提供的对象。
+
+## 第3章 DOM
+
+* `getElementById` 返回对象，`getElementsByTagName` 返回对象数组；
+* 现有DOM方法实现 `getElementsByClassName` :
+
+```
+     function getElementsByClassName(node,classname){
+          if(node.getElementsByClassName){
+               return node.getElementsByClassName(classname);
+          }else{
+               var results = new Array();
+               var elems = node.getElementsByTagName("*");
+               for(var i=0; i<elems.length; i++){
+                    if (elems[i].className.indexof(classname) != -1){
+                         results[results.length] = elems[i];
+                    }
+               }
+          return results;
+          }
+     }
+```
+
+* `getAttribute()` ，`setAttribute()` ；
