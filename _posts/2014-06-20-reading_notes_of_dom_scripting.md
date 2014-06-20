@@ -49,6 +49,7 @@ category: blog
 * `nodeType` 属性：元素节点 `nodeType` 属性值：1；属性节点：2；文本节点：3；
 * `nodeValue` 属性：改变一个文本节点的值，`node.childNodes[0].nodeValue` ；
 * `firstChild,lastChild` 属性：
+
 ```
      node.childNodes[0] = node.firstChild；
      node.childNodes[node.childNodes.length-1] = node.lastChild；
@@ -58,7 +59,7 @@ category: blog
 
 * window.open(url,name,features)：创建新的浏览器窗口；
 * 平稳退化；
-* 性能考虑：
-     ** 尽量少访问DOM和尽量减少标记；
-     ** 合并和放置脚本(把所有<script>标签放于文档末尾);
-     ** 压缩脚本(xx.min.js)；
+* 性能考虑：<br/>
+a. 尽量少访问DOM和尽量减少标记；<br/>
+b. 合并和放置脚本(把所有<script>标签放于文档末尾);<br/>
+c. 压缩脚本(xx.min.js)；
