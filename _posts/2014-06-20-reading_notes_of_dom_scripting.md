@@ -57,8 +57,28 @@ category: blog
 
 ## 第5章 JavaScript编程原则和良好习惯
 
-* window.open(url,name,features)：创建新的浏览器窗口；
+* `window.open(url,name,features)` ：创建新的浏览器窗口；
 * 平稳退化；
 * 尽量少访问DOM和尽量减少标记；
 * 合并和放置脚本(把所有 `<script>` 标签放于文档末尾); 
 * 压缩脚本(xx.min.js)；
+
+## 第6章 案例研究：JavaScript美术馆改进版
+
+* JavaScript与HTML标记分离；
+* 页面加载时候执行多个函数：`addLoadEvent()` ;
+
+```
+     function addLoadEvent(func){
+           var oldonload = window.onload;
+           if (typeof window.onload != 'function'){
+                window.onload = func;
+           }else{
+               window.onload = function(){
+                    oldonload();
+                    func();
+               }
+           }
+     }
+```
+
