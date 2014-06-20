@@ -18,7 +18,7 @@ category: blog
 
 * 相等操作符==认为空字符串与false含义相同；全等操作符===会严格比较(值与类型)；
 * 在函数中对与全局变量相同名字的变量使用var关键字控制其为局部变量，因此函数内部变量应都使用var定义；
-* JavaScript 中的对象分为三种类型：用户定义的对象（user-defined object）；内建对象（native object）内建在JavaScript语言里的对象，如Array、Math和Date等；宿主对象（host object）由浏览器提供的对象。
+* JavaScript 中的对象分为三种类型：用户定义的对象(`user-defined object`)；内建对象(`native object`)内建在JavaScript语言里的对象，如Array、Math和Date等；宿主对象(`host object`)由浏览器提供的对象。
 
 ## 第3章 DOM
 
