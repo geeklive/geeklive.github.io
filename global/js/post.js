@@ -37,11 +37,6 @@ $(document).ready(function(){
         }
     });
 
-    window.disqus_shortname = 'geeklive'; // required: replace example with your forum shortname
-    $('#disqus_container .comment').html('');
-    var that = this;
-    $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
-
     (function(){
         var ie6 = ($.browser.msie && $.browser.version=="6.0") ? true : false;
 
