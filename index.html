@@ -15,7 +15,7 @@ layout: home
         <ul class="artical-list">
         {% for post in paginator.posts %}
             <li>
-                <h2><span class="title-time">{{ post.date|date:"%Y-%m-%d" }}</span><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a><span style="color:#999;font-size:16px;margin-left:40px;">{{ post.date|date:"%Y-%m-%d" }}</span></h2>
                 <div class="title-desc">{{ post.description }}</div>
             </li>
         {% endfor %}
