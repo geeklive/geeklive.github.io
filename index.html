@@ -41,7 +41,7 @@ layout: home
             {% if count == paginator.page %}
               <span class="current-page">{{count}}</span>
             {% else %}
-              <a href="/page{{count}}">{{count}}</a>
+              <a {% if count == 1 %}href="/" {% else%}href="/page{{count}}"{% endif %}>{{count}}</a>
             {% endif %}
           {% endfor %}
         
