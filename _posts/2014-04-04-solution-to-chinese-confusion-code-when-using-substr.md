@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP substr截取中文字符出现乱码问题解惑
+title: PHP substr截取中文字符乱码问题解惑
 description: PHP substr截取中文字符时通常会出现乱码。这是因为中文UTF-8编码，每个汉字占3字节，而GB2312占2字节，英文占1字节，截取位不准确，造成断开的字符会把其后的内容拉过来一起做一个字，所以出现了乱码。我们可以通过使用mbstring扩展库的mb_substr截取；或者自己书写截取函数等方式来解决这一问题。
 category: blog
 ---
