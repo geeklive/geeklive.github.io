@@ -2,10 +2,12 @@
 
 #### Sun will shine on the horizon.
 
-[Vien@豆瓣](http://www.douban.com/people/54279294/)
+[Vien @ 豆瓣](http://www.douban.com/people/54279294/)
 
-[Vien_Dave@Instagram](http://instagram.com/vien_dave)
+[Vien_Dave @ Instagram](http://instagram.com/vien_dave)
 
-[不吐槽不舒服斯基嚒@新浪微博](http://weibo.com/u/1843172481)
+[戴维扬 @ 知乎](http://www.zhihu.com/people/dai-wei-yang)
+
+[不吐槽不舒服斯基嚒 @ 新浪微博](http://weibo.com/u/1843172481)
 
 Email：jacob.seu.cose@gmail.com
