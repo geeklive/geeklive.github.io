@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 使用Axure RP7 创建响应式设计原型图[译文]
+title: 使用Axure RP7创建响应式原型图[译文]
 description: 响应式设计用一种非常优雅的方式处理为多种设备类型使用HTML和CSS编码的应用，但是提供给UX专业人士的原型工具却没有具备同样品质的可以测试或者验证的功能。不过随着最新Axure RP 7中的适应性视图功能发布后，这个情况开始改变了。
 category: blog
 ---
