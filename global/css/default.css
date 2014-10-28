@@ -108,8 +108,6 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .index-content .artical-cate li a:hover { text-decoration:none; }
 .index-content .artical-cate li.on span{ color:red; }
 
-.index-content #pagination {margin-bottom:50px;}
-
 .index-content .cate-bar { height:3px; width:70%; margin:0 auto;margin-bottom:100px; }
 .index-content #cateBar { display:inline-block; zoom:1; height:3px; background:red; position:relative; width:0; }
 
@@ -127,7 +125,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
 /***************分页样式***************/
-#pagination {float:right;margin-right:120px;}
+#pagination {float:right;margin-right:120px;margin-bottom:50px;}
 
 /**************目录导航**************/
 #menuIndex {overflow:auto;}
