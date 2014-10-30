@@ -27,7 +27,7 @@ category: blog
 
 对于付费会员，厂家投入巨额资金，购了额外的带宽，建设了额外数据中心，加大网络建设，因此会员的下载速度比非会员快是因为他们付费为自己购买了更多的带宽与服务器，拥有了专属的高速下载通道，如以下示意图。
 
-<p class="picture"><img alt="" src="http://pic4.zhimg.com/457eeab7690d0869fff920f38df80de7_b.jpg"/></p>
+<p class="picture"><img alt="" src="http://daiweiyang.qiniudn.com/xunlei.jpg"/></p>
 
 因此，对今天碰到的蓝钻下载加速突破物理带宽揣测原因为：通过CDN将文件分发到江苏南京电信机房的服务器里，并分发到与本机网络所处同一个城域网的环境，这样造成下载速度走局域网资源从而突破物理带宽。
 
