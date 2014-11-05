@@ -19,8 +19,6 @@ layout: default
         <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
         {{ content }}
 
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="http://daiweiyang.com{{ page.url }}"></div>
         <!-- 多说评论框 end -->
             <div style="margin-bottom:20px" class="right">
             <script type="text/javascript" charset="utf-8">
@@ -45,6 +43,9 @@ layout: default
                 })()
             </script>
     </div>
+
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="http://daiweiyang.com{{ page.url }}"></div>
         <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
         <script type="text/javascript">
             var duoshuoQuery = {short_name:"vien"};
@@ -58,6 +59,10 @@ layout: default
             	})();
         </script>
     <!-- 多说公共JS代码 end -->
+    </div>
+
+    <div class="sidenav">
+        <iframe width="100%" height="120" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=0&isWeibo=0&isFans=0&uid=1843172481&verifier=1f141205&dpc=1"></iframe>
     </div>
 
     <div class="sidenav">
