@@ -22,22 +22,7 @@ layout: default
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="http://daiweiyang.com{{ page.url }}"></div>
         <!-- 多说评论框 end -->
-        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-        <script type="text/javascript">
-            var duoshuoQuery = {short_name:"vien"};
-            	(function() {
-            		var ds = document.createElement('script');
-            		ds.type = 'text/javascript';ds.async = true;
-            		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            		ds.charset = 'UTF-8';
-            		(document.getElementsByTagName('head')[0] 
-            		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-            	})();
-        </script>
-    <!-- 多说公共JS代码 end -->
-    </div>
-
-    <div style="margin-bottom:20px" class="right">
+            <div style="margin-bottom:20px" class="right">
             <script type="text/javascript" charset="utf-8">
                 (function(){
                   var _w = 86 , _h = 16;
@@ -59,6 +44,20 @@ layout: default
                   document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
                 })()
             </script>
+    </div>
+        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+        <script type="text/javascript">
+            var duoshuoQuery = {short_name:"vien"};
+            	(function() {
+            		var ds = document.createElement('script');
+            		ds.type = 'text/javascript';ds.async = true;
+            		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            		ds.charset = 'UTF-8';
+            		(document.getElementsByTagName('head')[0] 
+            		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+            	})();
+        </script>
+    <!-- 多说公共JS代码 end -->
     </div>
 
     <div class="sidenav">
