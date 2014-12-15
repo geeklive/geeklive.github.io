@@ -62,16 +62,17 @@ category: blog
 
 ## 三、问题解决方法
 
-1、开启`svnserver`服务，Macbook Pro下面通过svn协议请求代码资源；
+1. 开启 `Svnserver` 服务，Macbook Pro下面通过svn协议请求代码资源；
 
-2、修改 ~/.subversion/servers 文件, 添加http-chunked-requests=no 如下:
+2. 修改 `~/.subversion/servers` 文件, 添加 `http-chunked-requests=no` 。
 
+如下：
 
 	[global]
 	http-chunked-requests = no
 
 ## 四、总结
 	
-	SVN坑好多，还是Git好用 T_T。
+	Svn坑好多，还是Git好用 T_T。
 
 
