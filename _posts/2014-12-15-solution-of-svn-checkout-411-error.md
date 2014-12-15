@@ -21,7 +21,7 @@ category: blog
 
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-安装完毕后首先更新formule，确保每次安装的文件都是最新的，`` brew update``，搜索自己需要的软件，例如要搜索svn相关软件；``brew search svn``；安装软件：``brew install svn``。
+安装完毕后首先更新formule，确保每次安装的文件都是最新的，` brew update`，搜索自己需要的软件，例如要搜索svn相关软件；`brew search svn`；安装软件：`brew install svn`。
 
 需要注意的是，目前网上所有资料相关都有提到一个`brew versions`命令，用于查看软件Version，而实际运行结果为：`brew versions svn   Error: Unknown command: versions`，解决方法为`brew versions install`，然后`brew tap homebrew/boneyard`，接下来就可以正常使用brew versions。
 
@@ -54,7 +54,7 @@ category: blog
 ### 2、检查SVN日志
 检查服务器svn日志，发现如下日志：
 
-	9.77.218.146 – - [14/Dec/2014:18:10:49 +0800] “OPTIONS /svn/phpdba HTTP/1.1″ 411 181 “-” “SVN/1.7.17 serf/1.3.3″``
+	9.77.218.146 – - [14/Dec/2014:18:10:49 +0800] “OPTIONS /svn/phpdba HTTP/1.1″ 411 181 “-” “SVN/1.7.17 serf/1.3.3″
 	9.77.218.146 – - [14/Dec/2014:18:12:42 +0800] “OPTIONS /svn/phpdba HTTP/1.1″ 411 18z “-” “SVN/1.7.17 serf/1.3.3″
 
 
