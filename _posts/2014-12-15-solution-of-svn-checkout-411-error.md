@@ -61,13 +61,17 @@ category: blog
 定位到请求直接被Nginx挡住，返回411错误代码，由此问题确定：Macbook Pro 的svn checkout的时候，没有或者丢失内容长度信息，Nginx检查到缺少内容长度信息，返回411。
 
 ## 三、问题解决方法
-* 1、开启`svnserver`服务，Macbook Pro下面通过svn协议请求代码资源；
-* 2、修改 ~/.subversion/servers 文件, 添加http-chunked-requests=no 如下:
+
+1、开启`svnserver`服务，Macbook Pro下面通过svn协议请求代码资源；
+
+2、修改 ~/.subversion/servers 文件, 添加http-chunked-requests=no 如下:
+
 
 	[global]
 	http-chunked-requests = no
 
 ## 四、总结
-SVN坑好多，还是Git好用 T_T。
+	
+	SVN坑好多，还是Git好用 T_T。
 
 
