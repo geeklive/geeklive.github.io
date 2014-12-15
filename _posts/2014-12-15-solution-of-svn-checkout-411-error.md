@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MacPro Yosemite SVN无法Checkout解决方法
-description: Macbook Pro升级Yosemite后svn checkout代码时，遇到411 Content Length Required的报错，本文详细介绍了排查步骤已经解决方法。
+title: MacPro 10.10 SVN无法Checkout解决方法
+description: Macbook Pro升级Yosemite后svn checkout代码时，遇到411 Content Length Required的报错，本文详细介绍了排查步骤以及解决方法。
 category: blog
 ---
 
