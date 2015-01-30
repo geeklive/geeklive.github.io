@@ -4,7 +4,7 @@
 
 [Vien @ 豆瓣](http://www.douban.com/people/54279294/)
 
-[Vien_Dave @ Instagram](http://instagram.com/vien_dave)  ———— [墙内备份 @ Lofter: vien.cc](vien.cc)
+[Vien_Dave @ Instagram](http://instagram.com/vien_dave)  —— [墙内备份 @ Lofter: vien.cc](http://vien.cc)
 
 [戴维扬 @ 知乎](http://www.zhihu.com/people/dai-wei-yang)
 
