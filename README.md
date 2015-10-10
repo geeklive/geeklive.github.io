@@ -10,4 +10,4 @@
 
 [不吐槽不舒服斯基嚒 @ 新浪微博](http://weibo.com/u/1843172481)
 
-Email：jacob.seu.cose@gmail.com
+Email：jacob.seu.cose@gmail.com || vien_dave@icloud.com
